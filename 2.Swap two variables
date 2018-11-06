@@ -1,0 +1,14 @@
+#Swap two variables
+a=[2,4,1]
+b=[1,3,8]
+#Assign third variable
+temp =a
+a=b
+b=temp
+print(a)
+
+
+
+#result
+[1, 3, 8]
+[2, 4, 1]
