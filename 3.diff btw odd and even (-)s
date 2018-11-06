@@ -1,0 +1,16 @@
+print (7-3)
+print (7--3)
+print (7---3)
+print (7----3)
+
+
+#result
+4
+10
+4
+10
+
+
+
+#hint
+7--3 is 10. To match how Python evaluates this expression, we would parenthesize it as 7-(-3). The first - is treated as a subtraction operator, but the second one is treated as negation. We're subtracting negative 3 (which is equivalent to adding 3). Subsequent -s are all treated as additional negations, so they cause the subtracted quantity to flip back and forth between 3 and negative 3. Therefore, when there are an odd number of -s, the expression equals 4. When there's an even number, the expression equals 10.
